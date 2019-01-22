@@ -14,5 +14,6 @@ RUN pip install awscli
 
 COPY gotty.conf /etc/nginx/conf.d
 COPY run.sh /run.sh
+EXPOSE 443
 ENTRYPOINT [ "/run.sh" ]
 
